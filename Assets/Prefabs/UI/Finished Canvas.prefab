@@ -191,7 +191,7 @@ MonoBehaviour:
       - m_Target: {fileID: 882989916890277038}
         m_TargetAssemblyTypeName: NextLevelButton, Assembly-CSharp
         m_MethodName: NextLevel
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 882989917680203426}
   - component: {fileID: 882989917680203427}
   - component: {fileID: 882989917680203424}
+  - component: {fileID: 5820131847353558130}
   m_Layer: 5
   m_Name: Finished Canvas
   m_TagString: Untagged
@@ -528,6 +529,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5820131847353558130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882989917680203425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f575859942b7c40b7c58882de47114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelOptions: {fileID: 882989917012560896}
 --- !u!1 &882989917900257374
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +798,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 882989918043021544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5820131847353558130}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: BackToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &882989918077692049
 GameObject:
   m_ObjectHideFlags: 0

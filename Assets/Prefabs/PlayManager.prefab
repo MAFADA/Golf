@@ -49,3 +49,6 @@ MonoBehaviour:
   goalWindow: {fileID: 0}
   goalText: {fileID: 0}
   shootCountText: {fileID: 0}
+  onBallGoal:
+    m_PersistentCalls:
+      m_Calls: []
